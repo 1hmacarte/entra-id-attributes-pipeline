@@ -22,7 +22,7 @@ Configure os segredos:
 - `CLIENT_SECRET`
 - `TENANT_ID`
 
-E dispare o workflow `Executar IAM Pipeline`.
+E dispare o workflow `Executar Pipeline`.
 
 ## Scripts
 
