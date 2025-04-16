@@ -2,10 +2,10 @@
 import subprocess
 
 scripts = [
-    "scripts/01_extrair_usuarios_sp.py",
-    "scripts/02_extrair_definicoes.py",
-    "scripts/03_match_atributos.py",
-    "scripts/04_aplicar_atributos.py"
+    "01_extrair_usuarios_sp.py",
+    "02_extrair_definicoes.py",
+    "03_match_atributos.py",
+    "04_aplicar_atributos.py"
 ]
 
 print("Iniciando pipeline \n")
