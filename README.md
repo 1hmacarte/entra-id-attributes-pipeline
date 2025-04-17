@@ -124,6 +124,10 @@ Depois, dispare o workflow `Executar Pipeline` manualmente ou por push automáti
 -  Integração com logs de auditoria e geração de relatórios
 -  Suporte a múltiplas tenants com rotas segregadas
 -  Template para implantação via Terraform
+-  adicionar funcionalidade de remoção de atributos.
+-  Adicionar funcionalidade de SOD
+-  Adicionar funcionalidade de Acesso a aplicativos
+-  Adicionar funcionalidade de Concessão de acesso
 
 ---
 
