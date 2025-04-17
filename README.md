@@ -29,11 +29,11 @@ Essa ferramenta é essencial para organizações que desejam elevar sua governan
 
 ##  Casos de Uso
 
-- Governança de acesso baseado em **Centro de Custo**
-- Aplicação automatizada de atributos em **Service Principals**
+- Governança de acesso baseado em **Atributo**
+- Aplicação automatizada de atributos em **Identidades e aplicativos**
 - Políticas de acesso dinâmicas usando **ABAC**
 - Apoio a projetos de **IAM** e **IGA**
-- Segurança baseada em contexto para ambientes regulados (LGPD, HIPAA, etc.)
+- Segurança baseada em contexto para ambientes regulamentados
 
 ---
 
@@ -57,7 +57,10 @@ Essa ferramenta é essencial para organizações que desejam elevar sua governan
 - Conta no Entra ID (Azure AD Premium)
 - Registro de aplicação com as permissões:
   - `Application.ReadWrite.All`
-  - `Directory.AccessAsUser.All` (ou equivalente)
+  - `Directory.Read.All` (ou equivalente)
+  - `CustomSecAttributeDefinition.Read.All`
+  - `CustomSecAttributeAssignment.ReadWrite.All` 
+
 - Permissões de Service Principal para uso de customSecurityAttributes
 
 ---
@@ -116,11 +119,11 @@ Depois, dispare o workflow `Executar Pipeline` manualmente ou por push automáti
 
 ##  Roadmap
 
-- [ ] Suporte a leitura de arquivos CSV externos com mapeamentos
-- [ ] UI mínima em Streamlit para execução manual
-- [ ] Integração com logs de auditoria e geração de relatórios
-- [ ] Suporte a múltiplas tenants com rotas segregadas
-- [ ] Template para implantação via Terraform
+-  Suporte a leitura de arquivos CSV externos com mapeamentos
+-  UI mínima em Streamlit para execução manual
+-  Integração com logs de auditoria e geração de relatórios
+-  Suporte a múltiplas tenants com rotas segregadas
+-  Template para implantação via Terraform
 
 ---
 
