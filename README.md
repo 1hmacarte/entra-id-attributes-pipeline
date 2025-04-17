@@ -1,33 +1,33 @@
 
-# 💼 Entra ID Attributes Pipeline
+#  Entra ID Attributes Pipeline
 
 **Automatize o gerenciamento de atributos personalizados de segurança no Microsoft Entra ID (Azure AD)** com foco em governança baseada em contexto, como **Centro de Custo**, **Departamento** ou **Entidade Organizacional**.
 
 ---
 
-## 🛡️ Visão Geral
+##  Visão Geral
 
 O `entra-id-attributes-pipeline` é uma solução **open source** para aplicar, atualizar e validar **customSecurityAttributes** de forma segura e automatizada usando a **Microsoft Graph API**. Atribua dinamicamente atributos a Service Principals com base em regras de nomenclatura e controle de acesso organizacional.
 
 Essa ferramenta é essencial para organizações que desejam elevar sua governança de identidade e controle de acesso na nuvem com práticas modernas como **ABAC** (Attribute-Based Access Control).
 
-> 🔗 Baseado na documentação oficial da Microsoft:  
-> [Custom security attributes overview](https://learn.microsoft.com/en-us/graph/api/resources/customsecurityattributeoverview)
+>  Baseado na documentação oficial da Microsoft:  
+> [Custom security attributes overview](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/custom-security-attributes-apps?pivots=ms-graph)
 
 ---
 
-## 🚀 Benefícios
+##  Benefícios
 
-✅ **Automação Total** do processo de associação de atributos de segurança personalizados.  
-✅ **Governança Contextual de Acesso** por centro de custo, unidade de negócio ou criticidade.  
-✅ **Compliance e Auditoria** com histórico de alterações.  
-✅ **Redução de Erros Humanos** por meio de scripts seguros e reutilizáveis.  
-✅ **Integração com Pipelines DevSecOps**, como GitHub Actions, Azure Pipelines e Jenkins.  
-✅ **Escalabilidade** para múltiplos tenants, ambientes e aplicações.
+ **Automação Total** do processo de associação de atributos de segurança personalizados.  
+ **Governança Contextual de Acesso** por centro de custo, unidade de negócio ou criticidade.  
+ **Compliance e Auditoria** com histórico de alterações.  
+ **Redução de Erros Humanos** por meio de scripts seguros e reutilizáveis.  
+ **Integração com Pipelines DevSecOps**, como GitHub Actions, Azure Pipelines e Jenkins.  
+ **Escalabilidade** para múltiplos tenants, ambientes e aplicações.
 
 ---
 
-## 🧠 Casos de Uso
+##  Casos de Uso
 
 - Governança de acesso baseado em **Centro de Custo**
 - Aplicação automatizada de atributos em **Service Principals**
@@ -37,21 +37,21 @@ Essa ferramenta é essencial para organizações que desejam elevar sua governan
 
 ---
 
-## ⚙️ Funcionalidades
+##  Funcionalidades
 
-- 🔐 Autenticação segura via **MSAL**
-- 🔎 Consulta automática de Service Principals por nome
-- 📌 Correspondência lógica com atributos predefinidos
-- 🔄 Atualização de atributos via **Graph API**
-- 📂 Suporte a múltiplos ambientes com `.env`
-- ✅ Execução local ou CI/CD com GitHub Actions
-- 📊 Scripts modulares para extração, análise e aplicação
+-  Autenticação segura via **MSAL**
+-  Consulta automática de Service Principals por nome
+-  Correspondência lógica com atributos predefinidos
+-  Atualização de atributos via **Graph API**
+-  Suporte a múltiplos ambientes com `.env`
+-  Execução local ou CI/CD com GitHub Actions
+-  Scripts modulares para extração, análise e aplicação
 
 ---
 
-## 🧪 Como Usar
+##  Como Usar
 
-### ✅ Pré-requisitos
+###  Pré-requisitos
 
 - Python 3.10+
 - Conta no Entra ID (Azure AD Premium)
@@ -62,7 +62,7 @@ Essa ferramenta é essencial para organizações que desejam elevar sua governan
 
 ---
 
-### 💻 Execução Local
+###  Execução Local
 
 1. **Clone o repositório**  
    ```bash
@@ -84,7 +84,7 @@ Essa ferramenta é essencial para organizações que desejam elevar sua governan
 
 ---
 
-### ⚙️ Execução via GitHub Actions
+###  Execução via GitHub Actions
 
 Configure os segredos no repositório do GitHub:
 
@@ -96,25 +96,25 @@ Depois, dispare o workflow `Executar Pipeline` manualmente ou por push automáti
 
 ---
 
-## 📜 Scripts Incluídos
+##  Scripts Incluídos
 
 | Script | Função |
 |--------|--------|
 | `01_extract_entities.py` | Extrai usuários e Service Principals com atributos em CSV |
 | `02_extract_definitions.py` | Extrai a definição dos atributos customizados disponíveis |
-| `03_match_attributes.py` | Realiza a correspondência lógica entre SPs e os atributos esperados |
+| `03_match_attributes.py` | Realiza a correspondência lógica entre Service Principals e os atributos esperados |
 | `04_apply_patch.py` | Aplica os atributos nos SPs usando PATCH via Graph API |
 
 ---
 
-## 📘 Documentação Complementar
+##  Documentação Complementar
 
-- [Microsoft Graph - Custom Security Attributes](https://learn.microsoft.com/en-us/graph/api/resources/customsecurityattributeoverview)
-- [Attribute-based access control (ABAC) for Azure](https://learn.microsoft.com/en-us/azure/role-based-access-control/attribute-based-access-control)
+- [Microsoft Graph - Custom Security Attributes](https://learn.microsoft.com/en-us/entra/fundamentals/custom-security-attributes-overview)
+- [Troubleshoot Custom Security Attribute](https://learn.microsoft.com/en-us/entra/fundamentals/custom-security-attributes-troubleshoot)
 
 ---
 
-## 📈 Roadmap
+##  Roadmap
 
 - [ ] Suporte a leitura de arquivos CSV externos com mapeamentos
 - [ ] UI mínima em Streamlit para execução manual
@@ -124,15 +124,15 @@ Depois, dispare o workflow `Executar Pipeline` manualmente ou por push automáti
 
 ---
 
-## 🤝 Contribua
+##  Contribua
 
 Pull requests são bem-vindos! Para grandes alterações, por favor abra uma issue antes para discussão.
 
 ---
 
-## 📞 Contato
+##  Contato
 
-Desenvolvido por [@1hmacarte](https://github.com/1hmacarte)  
-Para suporte, integração personalizada ou consultoria de segurança IAM, entre em contato via GitHub ou LinkedIn.
+Desenvolvido por [@1hmacarte](https://github.com/1hmacarte) - Especialista em Soluções de Cloud Security 
+Para suporte, integração personalizada ou consultoria na implementação de segurança Cloud IAM, entre em contato via GitHub ou LinkedIn.
 
 ---
