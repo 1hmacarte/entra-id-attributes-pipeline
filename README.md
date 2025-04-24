@@ -140,6 +140,6 @@ Pull requests são bem-vindos! Para grandes alterações, por favor abra uma iss
 ##  Contato
 
 Desenvolvido por [@1hmacarte](https://github.com/1hmacarte) - Especialista em Soluções de Cloud Security 
-Para suporte, integração personalizada ou consultoria na implementação de segurança Cloud IAM, entre em contato via GitHub ou LinkedIn.
+para suporte, integração personalizada ou consultoria na implementação de segurança Cloud IAM, entre em contato via GitHub ou LinkedIn.
 
 ---
